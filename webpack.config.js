@@ -65,7 +65,7 @@ const common = {
     }),
     new htmlWebpackPlugin({
       template: path.join(SRC_DIR, 'index.html'),
-      favicon: path.join(ASSETS_DIR, 'images/favicon.svg'),
+      favicon: path.join(ASSETS_DIR, 'images/favicon.png'),
     }),
   ],
   // externalsPresets: { node: true },

@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "sabuhinazarov",
   "version": "1.0.0",
-  "description": "React Boilerplate with webpack",
+  "description": "Sabuhi Nazarov's resume",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -13,11 +13,11 @@
     "build": "NODE_ENV=production npm run clean && npm run webpack:prod"
   },
   "keywords": [
-    "react",
-    "webpack",
-    "boilerplate",
-    "typescript",
-    "sass"
+    "sabuhinazarov",
+    "frontend",
+    "fullstack",
+    "developer",
+    "resume"
   ],
   "author": "Sabuhi Nazarov",
   "license": "MIT",

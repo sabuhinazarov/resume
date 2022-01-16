@@ -1,0 +1,14 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss',
+	'../../../assets/styles/colors';
+
+.lang-skills {
+	li {
+    width: 100%;
+    padding: 0.5rem 0;
+		@include flex($ai: c, $jc: sb);
+		.lang-level {
+      color: $lightTextColor;
+      font-weight: 300;
+		}
+	}
+}

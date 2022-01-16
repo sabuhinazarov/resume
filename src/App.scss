@@ -1,0 +1,51 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss',
+	'./assets/styles/colors', './assets/styles/variables';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	&:focus {
+		outline: 0 !important;
+	}
+}
+
+html {
+	font-size: $baseSize;
+	font-family: $primaryFont;
+	height: 100%;
+}
+
+body {
+	background-color: $bgColor;
+	min-height: 100%;
+	position: relative;
+	color: $textColor;
+	line-height: toRem(16px);
+}
+
+i {
+	color: $iconColor;
+}
+
+a {
+	display: block;
+	color: $textColor;
+}
+
+a,
+a:hover,
+a:link {
+	text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.resume {
+	@include flex();
+	background-color: $bgColor;
+}

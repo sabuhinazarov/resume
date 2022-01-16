@@ -1,0 +1,28 @@
+@import "~@sabuhinazarov/node-common/build/styles/utils.scss", '../../assets/styles/colors';
+
+.contact {
+	ul.contacts {
+		li {
+			a {
+				@include flex($ai: c);
+				margin-bottom: 0.75rem;
+
+				i {
+          background-color: $primaryColor;
+          margin-right: 0.5rem;
+          padding: 0.35rem;
+          border-radius: 50%;
+          color: #fff;
+          font-size: 1.25rem;
+				}
+				.details {
+					.title {
+            color: $primaryColor;
+            font-size: 0.75rem;
+            font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}

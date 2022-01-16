@@ -1,11 +1,18 @@
 import React, { FC } from 'react';
 
-import './App.scss'
+import Content from './components/Content';
+import Sidebar from './components/Sidebar';
 
-interface IProps {
-}
+import './App.scss';
+
+interface IProps {}
 
 const App: FC<IProps> = () => {
-  return <div>React Boilerplate</div>
-}
+	return (
+		<div className="resume">
+			<Sidebar />
+			<Content />
+		</div>
+	);
+};
 export default App;

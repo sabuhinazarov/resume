@@ -1,0 +1,71 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss', '../../../assets/styles/colors', '../../../assets/styles/variables';
+
+.timeline-item {
+    position: relative;
+    padding-left: toRem(200px);
+    margin-bottom: 2rem;
+    @media print {
+        padding-left: toRem(130px);
+    }
+    &__date {
+        position: absolute;
+        left: 0;
+        text-align: right;
+        font-weight: 300;
+        color: $lightTextColor;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        width: toRem(155px);
+
+        @media print {
+            width: toRem(85px);
+        }
+    }
+
+    &__title {
+        font-size: 1.15rem;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+        @media print {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__subtitle {
+        color: $lightTextColor;
+        margin-bottom: 0.5rem;
+    }
+
+    &__content {
+        font-weight: 300;
+        font-size: 0.9rem;
+        white-space: pre-line;
+        font-family: $primaryFont;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: toRem(170px);
+        width: toRem(12px);
+        height: toRem(12px);
+        border-radius: 50%;
+        background-color: $contentBgColor;
+        border: 3px solid $primaryColor;
+        z-index: 10;
+        transition: background-color ease-in-out 0.2s;
+
+        @media print {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: toRem(100px);
+        }
+    }
+    &:hover::before {
+        background-color: $primaryColor;
+    }
+}

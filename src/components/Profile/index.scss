@@ -1,0 +1,41 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss', '../../assets/styles/colors';
+
+.profile {
+	@include flex($dr: c, $ai: c, $jc: c);
+	&__photo {
+		img {
+			width: toRem(150px);
+			height: toRem(150px);
+			padding: toRem(5px);
+			background-color: #fff;
+			border-radius: 50%;
+			object-fit: cover;
+			border: toRem(2px) solid $primaryColor;
+		}
+	}
+	&__name {
+		font-weight: 500;
+		font-size: toRem(22px);
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+	}
+	&__position {
+		font-size: toRem(14px);
+		color: $lightTextColor;
+	}
+}
+
+@media print {
+	.profile {
+		&__photo {
+			img {
+				width: toRem(120px);
+				height: toRem(120px);
+			}
+		}
+		&__name {
+			font-size: toRem(20px);
+			margin-top: 1.25rem;
+		}
+	}
+}

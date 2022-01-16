@@ -1,0 +1,13 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss', '../../assets/styles/colors';
+
+.content {
+    background-color: $contentBgColor;
+    margin-left: 3rem;
+    width: calc(75% - 3rem);
+    padding: 3rem;
+    @media print {
+        margin-left: 2rem;
+        width: calc(65% - 2rem);
+        padding: 2.5rem;
+    }
+}

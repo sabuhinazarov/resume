@@ -1,0 +1,90 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss',
+	'../../assets/styles/colors';
+
+.sidebar {
+	position: relative;
+	width: 25%;
+	min-height: 100vh;
+	background-color: #fff;
+	&__frames {
+		.frame {
+			border-color: $primaryColor;
+			border-style: solid;
+			width: toRem(30px);
+			height: toRem(30px);
+      border-width: 0;
+
+			&:nth-child(1) {
+				border-top-width: toRem(3px);
+				border-left-width: toRem(3px);
+				position: absolute;
+				top: toRem(30px);
+				left: toRem(30px);
+			}
+
+			&:nth-child(2) {
+				border-top-width: toRem(3px);
+				border-right-width: toRem(3px);
+				position: absolute;
+				top: toRem(30px);
+				right: toRem(30px);
+			}
+
+			&:nth-child(3) {
+				border-bottom-width: toRem(3px);
+				border-left-width: toRem(3px);
+				position: absolute;
+				bottom: toRem(30px);
+				left: toRem(30px);
+			}
+
+			&:nth-child(4) {
+				border-bottom-width: toRem(3px);
+				border-right-width: toRem(3px);
+				position: absolute;
+				bottom: toRem(30px);
+				right: toRem(30px);
+			}
+		}
+	}
+	&__content {
+		padding: toRem(60px);
+	}
+
+	.skill-block {
+		margin: 2rem 0;
+	}
+
+	@media print {
+		width: 35%;
+		&__frames {
+			.frame {
+				width: toRem(20px);
+				height: toRem(20px);
+
+				&:nth-child(1) {
+					top: toRem(20px);
+					left: toRem(20px);
+				}
+
+				&:nth-child(2) {
+					top: toRem(20px);
+					right: toRem(20px);
+				}
+
+				&:nth-child(3) {
+					bottom: toRem(20px);
+					left: toRem(20px);
+				}
+
+				&:nth-child(4) {
+					bottom: toRem(20px);
+					right: toRem(20px);
+				}
+			}
+		}
+		&__content {
+			padding: toRem(30px);
+		}
+	}
+}

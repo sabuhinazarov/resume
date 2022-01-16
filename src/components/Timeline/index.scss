@@ -1,0 +1,20 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss', '../../assets/styles/colors';
+
+.timeline {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: toRem(17px);
+        bottom: 0;
+        left: toRem(178.5px);
+        border-right: toRem(2px) solid $borderColor;
+
+        @media print {
+            position: absolute;
+            top: toRem(17px);
+            bottom: 0;
+            left: toRem(108.5px);
+        }
+    }
+}

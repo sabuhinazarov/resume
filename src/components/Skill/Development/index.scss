@@ -1,0 +1,11 @@
+@import '~@sabuhinazarov/node-common/build/styles/utils.scss',
+	'../../../assets/styles/colors';
+
+.dev-skills {
+	@include flex($ai: c, $jc: sb, $wr: w);
+	li {
+		display: block;
+		padding: 0.5rem 0;
+		width: calc(50% - 0.5rem);
+	}
+}
