@@ -1,10 +1,16 @@
 @import '~@sabuhinazarov/node-common/build/styles/utils.scss', '../../assets/styles/colors';
 
 .hobbies {
-    @include flex($ai: c, $jc: sb, $wr: w);
-    li {
-        padding: 0.5rem 0;
-        display: block;
-        width: calc(50% - 0.5rem);
+    &__list {
+        @include flex($ai: c, $jc: sb, $wr: w);
+        li {
+            padding: 0.5rem 0;
+            display: block;
+            width: calc(50% - 0.5rem);
+        }
+    }
+
+    @media print {
+        padding-top: 1rem;
     }
 }

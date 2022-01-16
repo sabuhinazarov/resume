@@ -1,0 +1,10 @@
+.projects {
+  @media print {
+    .timeline-item:nth-child(4) {
+      padding-top: 1rem;
+      &::before {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

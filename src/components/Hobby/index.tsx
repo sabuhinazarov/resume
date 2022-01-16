@@ -18,9 +18,9 @@ const Hobbies: FC<IProps> = () => {
 	];
 
 	return (
-		<div className="skill-block">
+		<div className="skill-block hobbies">
 			<Heading title="Hobbies" />
-			<ul className="hobbies">
+			<ul className="hobbies__list">
 				{hobbies.map((hobby) => (
 					<li key={hobby}>{ hobby }</li>
 				))}

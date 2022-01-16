@@ -16,7 +16,7 @@ const Experience: FC<IProps> = () => {
 			title: 'Full Stack Developer',
 			subtitle: 'Workstreams.ai GmbH',
 			content:
-				'Being a part of an international (from Germany, the USA, Czechia, North Macedonia, India, Azerbaijan, Egypt, Brazilia, Turkey, Vietnam, Australia) startup team in the global market taught me to be agile, innovative and the importance of MVP and MVF (Minimum Viable Feature). I get to experience a different culture from around the world.',
+				'Being a part of an international startup team in the global market taught me to be agile, innovative and the importance of MVP. I get to experience a different culture from around the world.',
 		},
 		{
 			date: 'Nov 2018 - Mar 2021',
@@ -28,7 +28,7 @@ const Experience: FC<IProps> = () => {
 			date: 'Dec 2017 - Nov 2018',
 			title: 'Full Stack Developer',
 			subtitle: 'Freelance',
-			content: 'as A Freelancer I built multiple projects from scratch and learned new technologies. I got to experience the product development cycle in all aspects of the project from planning, design, development, testing, deployment, and maintenance.',
+			content: 'as A Freelancer I built multiple projects from scratch and learned new technologies. I got to experience the product development cycle in all aspects of the project like planning, design, development, testing, deployment, and maintenance.',
 		},
 		{
 			date: 'Jan 2017 - Dec 2017',

@@ -10,5 +10,10 @@
       color: $lightTextColor;
       font-weight: 300;
 		}
+
+		@media print {
+			font-size: 0.9rem;
+			line-height: 0.9rem;
+		}
 	}
 }

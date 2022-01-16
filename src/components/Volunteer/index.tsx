@@ -24,11 +24,6 @@ const Volunteer: FC<IProps> = () => {
 			subtitle: '"IRELI" Public Union',
 		},
 		{
-			date: '2015',
-			title: 'Web Developer & Co-Organizer',
-			subtitle: '"Youth Inc. Business Incubator" Project',
-		},
-		{
 			date: '2014',
 			title: 'Web Developer',
 			subtitle: '"No Hate Speech Movement" Azerbaijan',

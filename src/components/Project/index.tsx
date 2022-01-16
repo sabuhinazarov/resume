@@ -51,7 +51,7 @@ const Projects: FC<IProps> = () => {
 			title: 'BPM',
 			subtitle: 'Internal Platform',
 			content:
-				'Business Process Management where specialists manage all customer journeys (customer information, create or approve orders, opening accounts, deposits, credit score, etc.).  \n\n Platform Developed in cooperation with IBMx \n\n Technologies: React, Redux, Redux-Saga, Jest & Enzyme (Unit Testing), Cypress (E2E Tests)',
+				'Business Process Management platform where specialists can manage all customer journeys (create or approve orders, accounts, deposits, credit score, etc.).  \n\n Platform Developed in cooperation with IBMx \n\n Technologies: React, Redux, Redux-Saga, Jest & Enzyme (Unit Testing), Cypress (E2E Tests)',
 		},
 	];
 	return (
